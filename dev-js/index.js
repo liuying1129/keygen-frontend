@@ -348,11 +348,11 @@ var G = new Array(new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     let rStr = new TextDecoder('gbk').decode(new Uint8Array(WriteBuf2));
      
     //通过对象方式声明正则表达式
-    //let reg = new RegExp('\0', "g");//删除所有的NUL字符,即十进制为0的ASCII字符
+    //let reg = new RegExp('\0', "g");//删除所有的NUL字符(即十进制为0的ASCII字符)
     //通过正则字面量创建正则表达式
     //js中正则表达式的定界符是一对/,/内是正则表达式内容.其他语言可能使用其他特殊符号作为正则定界符
     //g:修饰符,用于执行全局匹配.i:修饰符,用于执行对大小写不敏感的匹配
-    let reg = /\0/g;
+    let reg = /\0+$/;//删除结尾的1个或多个NUL字符(即十进制为0的ASCII字符)
     rStr = rStr.replace(reg,'');
     return rStr;
   }
