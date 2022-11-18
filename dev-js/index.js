@@ -298,9 +298,8 @@ var G = new Array(new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
       let WriteBuf=DES_Code(ReadBuf);
 
       for (let j = 0;j <= 7;j++){	
-        let tmpSS = WriteBuf[j].toString(16);
-	let tmpS2 = tmpSS.length == 1 ? "0" + tmpSS : tmpSS;
-        rStr = rStr + tmpS2;
+        let tmpSS = "00" + WriteBuf[j].toString(16);
+        rStr = rStr + tmpSS.slice(-2);//截取最右边2位
       }
 
       i++;
