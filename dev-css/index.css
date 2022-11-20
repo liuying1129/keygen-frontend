@@ -6,13 +6,10 @@ body {
 }
  
 #slick-login {
-    width: 220px;
+    width: 350px;
     height: 155px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -110px;
-    margin-top: -75px;
+    margin: auto;
+    margin-top: 75px;
 }
  
 #slick-login label {
@@ -40,10 +37,6 @@ body {
 #slick-login input[type="text"]:focus,#slick-login input[type="password"]:focus {
     -webkit-box-shadow: inset 0px 2px 0px #a7a7a7;
     box-shadow: inset 0px 2px 0px #a7a7a7;
-}
- 
-#slick-login input:first-child {
-    margin-top: 0px;
 }
 
 #slick-login input[type="button"] {
@@ -82,18 +75,3 @@ body {
     -webkit-box-shadow: inset 0px 1px 0px #93a9e9;
     box-shadow: inset 0px 1px 0px #93a9e9;
 }
-
-.footer {
-    position:fixed; 
-    bottom:0;
-    width: 100%;
-    margin-bottom: 5px;
-    text-align:center;
-}
-
-.footer a {
-    color: Gray;
-    font-size: 8px;
-    text-decoration:none;
-}
-

@@ -9,11 +9,8 @@
 	
 	<title>YK-KeyGen</title>
 	
-        <!-- 网页图标 -->
-        <link rel="icon" href="images/favicon.ico" />
-
-        <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 网页图标 -->
+    <link rel="icon" href="images/favicon.ico" />
 
 	<link href="dev-css/index.css" rel="stylesheet">
 	
@@ -23,26 +20,23 @@
 	<form id="slick-login" class="animated bounce">
 	  <label for="seed">加密种子</label>
 	  <!-- <input type="password" name="password" placeholder="密码"> -->
-	  <input type="text" name="seed" placeholder="加密种子" onfocus="this.type='password'" autocomplete="off">
+	  <input type="text" name="seed" placeholder="加密种子" onfocus="this.type='password'" autofocus autocomplete="off">
 	  <label for="src_string">源字符串</label>
-	  <input type="text" name="src_string" placeholder="源字符串" autofocus required>
+	  <input type="text" name="src_string" placeholder="源字符串" required>
 	  <label for="en_string">加密字符串</label>
-	  <input type="text" name="en_string" placeholder="加密字符串" autofocus required>
+	  <input type="text" name="en_string" placeholder="加密字符串" required>
 	  <label for="de_string">解密字符串</label>
-	  <input type="text" name="de_string" placeholder="解密字符串" disabled="disabled" autofocus required>
+	  <input type="text" name="de_string" placeholder="解密字符串" disabled="disabled" required>
 
 	  <input type="button" value="加密" onclick="enCryptStrBtn()">
 	  <input type="button" value="解密" onclick="deCryptStrBtn()">
 	</form>
 
-        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-	
-        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-	
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		
 	<script src="dev-js/str2gbk.js"></script>
-	<script src="dev-js/index.js?v=202211190100"></script>	
+	<script src="dev-js/index.js?v=202211190100"></script>
 	
 </body>
 </html>
