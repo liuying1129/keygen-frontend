@@ -18,6 +18,14 @@ body {
     display: inline-block;
 }
 
+#imgEye {
+            width: 30px;
+            height: 30px;
+            /*background-image: url(../images/eye-close.png);*/
+            cursor: pointer;
+    /*display: inline-block;*/
+}
+
 .eye.open {
             background-image: url(../images/eye-open.png);
             background-size: 100% 100%; 

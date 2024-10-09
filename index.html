@@ -29,7 +29,8 @@
 	<form id="slick-login" class="animated bounce">
 	  <div class="pwd-div">
 	    <input type="password" name="seed" placeholder="加密种子" autofocus autocomplete="off">
-	    <div class="eye" id='eye'></div>
+	    <!-- <div class="eye" id='eye'></div> -->
+	    <img id="imgEye" src="images/eye-close.png" alt="小眼睛">
 	  </div>
 	  <input type="text" name="src_string" placeholder="源字符串" required>
 	  <input type="text" name="en_string" placeholder="加密字符串" required>
@@ -47,15 +48,17 @@
 
 	   <script>
        var password = document.querySelector("input[name='seed']");
-       var anniu = document.getElementById('eye');
+       var anniu = document.getElementById('imgEye');
        anniu.addEventListener('click',function(){
            if(password.type==='password')
            {
                password.setAttribute('type','text');
-               anniu.classList.add('open');
+               /*anniu.classList.add('open');*/
+               anniu.src = 'images/eye-open.png';
            }else{
             password.setAttribute('type','password');
-               anniu.classList.remove('open');
+               /*anniu.classList.remove('open');*/
+               anniu.src = 'images/eye-close.png';
            }
        })
    </script>
