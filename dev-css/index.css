@@ -36,16 +36,13 @@ body {
 }
 
 .pwd-div input[type="password"] {
-    width: 250px;
+    width: 300px;
     height: 100%;
-    margin-top: 7px;
     font-size: 14px;
     padding-left: 15px;    
     border-radius: 6px;
-             outline: none;
-            border: none;
-             position: absolute;
-            background-color:transparent;
+    background-color:yellow;
+    margin-left: -15px;
 }
 
 #slick-login input[type="button"] {
