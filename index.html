@@ -27,7 +27,10 @@
 <body>
 	
 	<form id="slick-login" class="animated bounce">
-	  <input type="password" name="seed" placeholder="加密种子" autofocus autocomplete="off">
+	  <div class="pwd-div">
+	    <input type="password" name="seed" placeholder="加密种子" autofocus autocomplete="off">
+	    <div class="eye" id='eye'></div>
+	  </div>
 	  <input type="text" name="src_string" placeholder="源字符串" required>
 	  <input type="text" name="en_string" placeholder="加密字符串" required>
 	  <input type="text" name="de_string" placeholder="解密字符串" disabled="disabled" required>
@@ -41,6 +44,21 @@
 		
 	<script src="dev-js/str2gbk.js"></script>
 	<script src="dev-js/index.js?v=202211190100"></script>
+
+	   <script>
+       var password = document.querySelector("input[name='seed']");
+       var anniu = document.getElementById('eye');
+       anniu.addEventListener('click',function(){
+           if(password.type==='password')
+           {
+               password.setAttribute('type','text');
+               anniu.classList.add('open');
+           }else{
+            password.setAttribute('type','password');
+               anniu.classList.remove('open');
+           }
+       })
+   </script>
 	
 </body>
 </html>
