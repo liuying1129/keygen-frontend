@@ -16,13 +16,13 @@ body {
             right: 15px;
             width: 30px;
             height: 30px;
-            background-image: url(./images/eye-close.png);
+            background-image: url(../images/eye-close.png);
             background-size: 100% 100%;   
             cursor: pointer;
 }
 
 .eye.open {
-            background-image: url(images/eye-open.png);
+            background-image: url(../images/eye-open.png);
             background-size: 100% 100%; 
         }
  
