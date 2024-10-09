@@ -40,7 +40,7 @@ body {
     border-radius: 6px;
 }
 
-.pwd-div input[type="password"] {
+.pwd-div input[name="seed"] {
     width: 300px;
     height: 100%;
     font-size: 14px;
