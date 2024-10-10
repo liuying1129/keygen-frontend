@@ -378,3 +378,15 @@ var G = new Array(new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     console.log('解密结果:'+data);
     document.querySelector("input[name='de_string']").value = data;  	
   }
+
+  var password = document.querySelector("input[name='seed']");
+  var imgEye = document.getElementById('imgEye');
+  imgEye.addEventListener('click',function(){
+    if(password.type==='password'){
+      password.setAttribute('type','text');
+      imgEye.src = '../images/eye-open.png';
+    }else{
+      password.setAttribute('type','password');
+      imgEye.src = '../images/eye-close.png';
+    }
+  })
