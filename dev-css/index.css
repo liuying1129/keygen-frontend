@@ -17,6 +17,7 @@ body {
     padding-left: 15px;    
     border-radius: 6px;
     background-color: red;
+    display: flex;
 }
 
 .pwd-div input[name="seed"] {
@@ -30,8 +31,8 @@ body {
 }
 
 #imgEye {
-    width: 30px;
-    height: 30px;
+    /*width: 30px;*/
+    /*height: 30px;*/
     cursor: pointer;
     background-color: yellow;
 }
