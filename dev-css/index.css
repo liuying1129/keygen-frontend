@@ -29,7 +29,6 @@ body {
 
 #imgEye {
     cursor: pointer;
-    background-color: yellow;
 }
 
 #slick-login input[name="src_string"],#slick-login input[name="en_string"],#slick-login input[name="de_string"] {
