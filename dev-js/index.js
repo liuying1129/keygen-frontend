@@ -384,9 +384,9 @@ var G = new Array(new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
   imgEye.addEventListener('click',function(){
     if(password.type==='password'){
       password.setAttribute('type','text');
-      imgEye.src = '../images/eye-open.png';
+      imgEye.src = 'images/eye-open.png';
     }else{
       password.setAttribute('type','password');
-      imgEye.src = '../images/eye-close.png';
+      imgEye.src = 'images/eye-close.png';
     }
   })
