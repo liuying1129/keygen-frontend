@@ -379,15 +379,14 @@ var G = new Array(new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     document.querySelector("input[name='de_string']").value = data;  	
   }
 
-  function eyeOpenClose(){
+  function eyeOpenClose(arg1){
 
     let password = document.querySelector("input[name='seed']");
-    let imgEye = document.getElementById('imgEye');
     if(password.type==='password'){
       password.setAttribute('type','text');
-      imgEye.src = 'images/eye-open.png';
+      arg1.src = 'images/eye-open.png';
     }else{
       password.setAttribute('type','password');
-      imgEye.src = 'images/eye-close.png';
+      arg1.src = 'images/eye-close.png';
     }
   }
