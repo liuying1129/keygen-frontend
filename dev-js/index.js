@@ -379,9 +379,10 @@ var G = new Array(new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
     document.querySelector("input[name='de_string']").value = data;  	
   }
 
-  var password = document.querySelector("input[name='seed']");
-  var imgEye = document.getElementById('imgEye');
-  imgEye.addEventListener('click',function(){
+  function eyeOpenClose(){
+
+    let password = document.querySelector("input[name='seed']");
+    let imgEye = document.getElementById('imgEye');
     if(password.type==='password'){
       password.setAttribute('type','text');
       imgEye.src = 'images/eye-open.png';
@@ -389,4 +390,4 @@ var G = new Array(new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
       password.setAttribute('type','password');
       imgEye.src = 'images/eye-close.png';
     }
-  })
+  }
