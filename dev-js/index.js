@@ -4,6 +4,16 @@
     //3、提高编译器效率，增加运行速度；
     //4、为未来新版本的Javascript做好铺垫
     "use strict";
+
+  //显示网络信息 begin
+  const divNetworkInfo = document.getElementById('divNetworkInfo');
+  if (navigator.connection) {
+    //effectiveType值范围:slow-2g、2g、3g、4g
+    divNetworkInfo.innerText="当前网络下载带宽："+navigator.connection.downlink+"Mb/s；有效网络类型："+navigator.connection.effectiveType;
+  } else {
+    divNetworkInfo.innerText="Network Information API 不被当前浏览器支持!";
+  }
+  //显示网络信息 end
  
 const SA1 = [1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1,0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1];
 const SA2 = [1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0,0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1];
