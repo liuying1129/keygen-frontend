@@ -275,10 +275,12 @@ var G = new Array(new Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
   //把密码转换成8字节的数据
   function StrToKey(aKey){
 
+    let baKey = str2gbk(aKey);//字符串转换为GBK编码数组
+
     let key=[0,0,0,0,0,0,0,0];
-    for (let i = 1;i<= aKey.length;i++)
+    for (let i = 1;i<= baKey.length;i++)
     {
-      key[i % 8] = key[i % 8] + aKey[i-1].charCodeAt();
+      key[i % 8] = key[i % 8] + baKey[i-1];
     }
     return key;
   }
